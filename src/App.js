@@ -3,22 +3,17 @@ import logo from './logo.svg';
 import './App.css';
 import { Provider } from "react-redux";
 import store from "./store";
-import { BrowserRouter as Router } from "react-router-dom";
 
 
-
+import ChatBot from 'react-simple-chatbot';
+import Chat from "./components/Chat";
 
 class App extends Component {
   render() {
     return (
 
         <Provider store={store}>
-            <Router>
-                <React.Fragment>
-
-                </React.Fragment>
-            </Router>
-
+            <Chat/>
         </Provider>
 
 
